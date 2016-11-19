@@ -11,8 +11,8 @@ Example usage:
 
 >> time python3 patience_sort.py 5000
 
-real	0m0.072s
-user	0m0.054s
+real    0m0.072s
+user    0m0.054s
 sys	    0m0.009s
 """
 
