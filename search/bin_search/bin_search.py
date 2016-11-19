@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-def bin_search(sequence, x):
+def bin_search(sequence, target):
     """
     Binary search algorithm
 
@@ -16,13 +16,13 @@ def bin_search(sequence, x):
     while sequence_len - index > 1:
         # Целочисленный тип в Python имеет неограниченную длину
         m = (index + sequence_len) // 2
-        if x < sequence[m]:
+        if target < sequence[m]:
             sequence_len = m
         else:
             index = m
 
     # если элемент не найден, возвращаем None
-    return index if lst[index] == x else None
+    return index if lst[index] == target else None
 
 
 if __name__ == '__main__':
